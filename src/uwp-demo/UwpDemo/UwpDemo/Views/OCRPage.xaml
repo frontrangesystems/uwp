@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="UwpDemo.Views.OCRPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid
+        x:Name="ContentArea"
+        Margin="{StaticResource MediumLeftRightMargin}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="TitleRow" Height="48" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            x:Name="TitlePage"
+            x:Uid="OCR_Title"
+            Style="{StaticResource PageTitleStyle}" />
+
+        <Grid
+            Grid.Row="1"
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Button x:Name="Run">Run OCR</Button>
+            <TextBlock x:Name="Output" Grid.Row="1" Grid.Column="0" />
+            <TextBlock Grid.Row="2" x:Name="Status" Grid.Column="0" />
+
+
+            <Image Source="ms-appx:///Images/ocr.png" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3"/>
+        </Grid>
+    </Grid>
+</Page>
+
