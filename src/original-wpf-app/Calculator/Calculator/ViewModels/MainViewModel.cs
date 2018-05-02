@@ -50,6 +50,7 @@ namespace Calculator.ViewModels
 
         public void Loaded()
         {
+            DisplayName = "Calculator";
             Status = "Ready";
         }
 
