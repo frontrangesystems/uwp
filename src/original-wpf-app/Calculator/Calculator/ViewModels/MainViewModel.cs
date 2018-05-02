@@ -60,7 +60,7 @@ namespace Calculator.ViewModels
                 return;
             }
 
-            var input = button.Content.ToString();
+            var input = button.Content.ToString().ToLower();
             if (input == "=")
             {
                 Answer = MathService.Calculate(Equation);
@@ -69,6 +69,10 @@ namespace Calculator.ViewModels
             }
 
             Equation = MathService.BuildEquation(Equation, input);
+            if (input == "ce")
+            {
+                Answer = 0;
+            }
         }
     }
 }

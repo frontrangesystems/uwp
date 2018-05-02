@@ -14,12 +14,12 @@ namespace Calculator.Services
                 equation = new EquationModel();
             }
 
-            if (input.ToLower() == "ce")
+            if (input == "ce")
             {
                 return new EquationModel();
             }
 
-            if (input.ToLower() == "c")
+            if (input == "c")
             {
                 if (string.IsNullOrWhiteSpace(equation.Operator))
                 {
