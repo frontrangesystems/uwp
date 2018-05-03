@@ -20,11 +20,12 @@
             x:Uid="Main_Title"
             Style="{StaticResource PageTitleStyle}" />
 
-        <Grid 
+        <Grid
             Grid.Row="1" 
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->
+            <TextBlock Style="{StaticResource PageTitleStyle}" HorizontalAlignment="Center">We did a thing!!!</TextBlock>
         </Grid>
     </Grid>
 </Page>

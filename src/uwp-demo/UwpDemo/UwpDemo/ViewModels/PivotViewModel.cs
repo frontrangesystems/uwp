@@ -10,6 +10,7 @@ namespace UwpDemo.ViewModels
         {
             Items.Add(new MainViewModel { DisplayName = "PivotItem_Main/Header".GetLocalized() });
             Items.Add(new OCRViewModel { DisplayName = "PivotItem_OCR/Header".GetLocalized() });
+            Items.Add(new InkViewModel { DisplayName = "PivotItem_Ink/Header".GetLocalized() });
             Items.Add(new SettingsViewModel { DisplayName = "PivotItem_Settings/Header".GetLocalized() });
         }
     }

@@ -177,4 +177,11 @@
   <data name="PivotItem_OCR.Header" xml:space="preserve">
     <value>OCR</value>
   </data>
+  <data name="Ink_Title.Text" xml:space="preserve">
+    <value>Ink</value>
+    <comment>Page title for Ink</comment>
+  </data>
+  <data name="PivotItem_Ink.Header" xml:space="preserve">
+    <value>Ink</value>
+  </data>
 </root>

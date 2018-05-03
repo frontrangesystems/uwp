@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="UwpDemo.Views.InkPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid
+        x:Name="ContentArea"
+        Margin="{StaticResource MediumLeftRightMargin}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="TitleRow" Height="48" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            x:Name="TitlePage"
+            x:Uid="Ink_Title"
+            Style="{StaticResource PageTitleStyle}" />
+
+        <Grid
+            Grid.Row="1"
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackPanel x:Name="HeaderPanel" Orientation="Horizontal" Grid.Row="0">
+                <TextBlock x:Name="Header"
+                           Text="Basic ink sample"
+                           Style="{ThemeResource HeaderTextBlockStyle}"
+                           Margin="10,0,0,0" />
+            </StackPanel>
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <Button Click="Recognize_OnClick" Margin="0,0,8,0">Recognize</Button>
+                <Button Click="Clear_OnClick">Clear</Button>
+            </StackPanel>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <InkCanvas x:Name="InkCanvas" />
+                <Canvas x:Name="RecognitionCanvas" Grid.Column="1" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
+

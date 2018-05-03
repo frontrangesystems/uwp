@@ -64,6 +64,7 @@ namespace UwpDemo
             _container.PerRequest<MainViewModel>();
             _container.PerRequest<SettingsViewModel>();
             _container.PerRequest<OCRViewModel>();
+            _container.PerRequest<InkViewModel>();
         }
 
         protected override object GetInstance(Type service, string key)
