@@ -23,9 +23,30 @@
         <Grid
             Grid.Row="1" 
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->
             <TextBlock Style="{StaticResource PageTitleStyle}" HorizontalAlignment="Center">We did a thing!!!</TextBlock>
+            <RelativePanel BorderBrush="Gray" BorderThickness="1" Grid.Row="1">
+                <Rectangle x:Name="RedRect" Fill="Red" Height="44" Width="44"/>
+                <Rectangle x:Name="BlueRect" Fill="Blue"
+                           Height="44" Width="88"
+                           RelativePanel.RightOf="RedRect" />
+
+                <Rectangle x:Name="GreenRect" Fill="Green" 
+                           Height="44"
+                           RelativePanel.Below="RedRect" 
+                           RelativePanel.AlignLeftWith="RedRect" 
+                           RelativePanel.AlignRightWith="BlueRect"/>
+                <Rectangle Fill="Orange"
+                           RelativePanel.Below="GreenRect" 
+                           RelativePanel.AlignLeftWith="BlueRect" 
+                           RelativePanel.AlignRightWithPanel="True"
+                           RelativePanel.AlignBottomWithPanel="True"/>
+            </RelativePanel>
         </Grid>
     </Grid>
 </Page>
