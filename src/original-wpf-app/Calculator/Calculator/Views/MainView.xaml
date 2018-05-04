@@ -33,19 +33,20 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Button Content="CE" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
-            <Button Content="C" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" />
+            <Button Content="C" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="0" Grid.Column="2" />
+            <Button Content="X" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="0" Grid.Column="3" />
             <Button Content="7" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="1" Grid.Column="0" />
             <Button Content="8" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="1" Grid.Column="1" />
             <Button Content="9" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="1" Grid.Column="2" />
-            <Button Content="X" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="1" Grid.Column="3" />
+            <Button Content="/" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="1" Grid.Column="3" />
             <Button Content="4" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="2" Grid.Column="0" />
             <Button Content="5" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="2" Grid.Column="1" />
             <Button Content="6" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="2" Grid.Column="2" />
-            <Button Content="-" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="2" Grid.Column="3" />
+            <Button Content="+" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="2" Grid.Column="3" />
             <Button Content="1" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="3" Grid.Column="0" />
             <Button Content="2" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="3" Grid.Column="1" />
             <Button Content="3" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="3" Grid.Column="2" />
-            <Button Content="+" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="3" Grid.Column="3" />
+            <Button Content="-" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="3" Grid.Column="3" />
             <Button Content="0" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="4" Grid.Column="1" />
             <Button Content="." cal:Message.Attach="ConfigureEquation($source)" Grid.Row="4" Grid.Column="2" />
             <Button Content="=" cal:Message.Attach="ConfigureEquation($source)" Grid.Row="4" Grid.Column="3" />
