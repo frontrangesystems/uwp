@@ -25,4 +25,5 @@ For a quick start, see the [Caliburn Micro Documentation](https://caliburnmicro.
 * [Getting Started with UWP](https://channel9.msdn.com/Shows/On-NET/Getting-started-with-UWP?wt.mc_id=AID627586_QSG_SCL_244352)
 * [Difference Between UWP and WPF](https://github.com/jbe2277/waf/wiki/UWP-vs.-WPF)
 * [Supported Native APIs](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-supported-api)
+* [Fluent Design System](https://docs.microsoft.com/en-us/windows/uwp/design/fluent-design-system/)
 * [Adaptive Layout](https://docs.microsoft.com/en-us/windows/uwp/design/basics/xaml-basics-adaptive-layout)
